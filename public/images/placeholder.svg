@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- SWAP: Replace with actual cover art. This is a dev placeholder. -->
+  <rect width="800" height="800" fill="#1a1a1a"/>
+  <rect x="1" y="1" width="798" height="798" fill="none" stroke="#800000" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="0" x2="800" y2="800" stroke="#800000" stroke-width="0.5" opacity="0.2"/>
+  <line x1="800" y1="0" x2="0" y2="800" stroke="#800000" stroke-width="0.5" opacity="0.2"/>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
+    font-family="Arial, sans-serif" font-size="14" fill="#555"
+    letter-spacing="4" text-transform="uppercase">COVER ART</text>
+</svg>

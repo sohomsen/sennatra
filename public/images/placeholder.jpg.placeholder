@@ -1,0 +1,6 @@
+PLACEHOLDER — Replace this directory note:
+
+public/images/placeholder.jpg  → fallback cover image for music releases without a coverImage
+public/images/about-photo.jpg  → your photo for the About page hero
+
+Both are referenced in components. Place real images here before deploying.

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600">
+  <!-- SWAP: Replace this with your actual photo as about-photo.jpg -->
+  <rect width="1200" height="1600" fill="#111"/>
+  <rect x="1" y="1" width="1198" height="1598" fill="none" stroke="#800000" stroke-width="1" opacity="0.3"/>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
+    font-family="Arial, sans-serif" font-size="16" fill="#444"
+    letter-spacing="6">YOUR PHOTO</text>
+  <text x="50%" y="calc(50% + 30px)" dominant-baseline="central" text-anchor="middle"
+    font-family="Arial, sans-serif" font-size="11" fill="#333"
+    letter-spacing="2">Place about-photo.jpg in public/images/</text>
+</svg>

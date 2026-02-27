@@ -1,0 +1,12 @@
+---
+title: "Depths"
+date: "2025-01-20"
+type: "Single"
+embedUrl: "https://open.spotify.com/embed/track/placeholder"
+platformLinks:
+  spotify: "https://open.spotify.com/track/placeholder"
+---
+
+The debut single from sennatra. Recorded over three months in isolation, *Depths* explores the tension between silence and sound.
+
+Released independently in January 2025.
