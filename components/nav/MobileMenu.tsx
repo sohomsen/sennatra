@@ -3,11 +3,14 @@
 import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 import { NavLink } from './NavLink'
 import { socialLinks } from '@/lib/social'
+import { useTransitionContext } from '@/components/transition/TransitionProvider'
 
 // ─── Nav items ───────────────────────────────────────────────────────────────
 const navItems = [
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/music', label: 'Music' },
   { href: '/shows', label: 'Shows' },
@@ -37,6 +40,7 @@ interface MobileMenuProps {
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const pathname = usePathname()
+  const { triggerTransition } = useTransitionContext()
 
   // Close on route change
   useEffect(() => {
@@ -89,8 +93,28 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             aria-hidden="true"
           />
 
-          {/* Header row: close button */}
-          <div className="relative z-10 flex items-center justify-end px-6 h-[60px] shrink-0">
+          {/* Header row: home logo (left) + close button (right) */}
+          <div className="relative z-10 flex items-center justify-between px-6 h-[60px] shrink-0">
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <button
+                onClick={() => triggerTransition('/')}
+                aria-label="Go home"
+                className="block"
+              >
+                <Image
+                  src="/logo.svg"
+                  alt="sennatra"
+                  width={130}
+                  height={40}
+                  className="w-[90px] h-auto"
+                />
+              </button>
+            </motion.div>
+
             <motion.button
               onClick={onClose}
               aria-label="Close navigation menu"

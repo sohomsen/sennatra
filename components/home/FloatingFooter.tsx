@@ -21,25 +21,20 @@ export function FloatingFooter() {
           background: 'linear-gradient(to top, rgba(10,10,10,0.8) 0%, transparent 100%)',
         }}
       />
-      <div className="relative z-10 px-6 md:px-10 pb-6 pt-8 pointer-events-auto">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                className="text-brand-subtle hover:text-brand-red transition-colors duration-200"
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-          <p className="text-[10px] tracking-[0.2em] uppercase text-brand-red">
-            &copy; {new Date().getFullYear()} sennatra
-          </p>
+      <div className="relative z-10 px-6 md:px-10 pb-8 md:pb-6 pt-8 pointer-events-auto">
+        <div className="flex items-center gap-4">
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.label}
+              className="text-brand-subtle hover:text-brand-red transition-colors duration-200"
+            >
+              {link.icon}
+            </a>
+          ))}
         </div>
       </div>
     </motion.div>

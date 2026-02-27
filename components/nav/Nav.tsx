@@ -11,6 +11,7 @@ import { useTransitionContext } from '@/components/transition/TransitionProvider
 import { cn } from '@/lib/utils'
 
 const navItems = [
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/music', label: 'Music' },
   { href: '/shows', label: 'Shows' },

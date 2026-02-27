@@ -21,8 +21,8 @@ export function useHeroInView(isHomePage: boolean): boolean {
       return
     }
     const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0 }
+      ([entry]) => setInView(entry.intersectionRatio >= 0.5),
+      { threshold: [0, 0.5] }
     )
     observer.observe(hero)
     return () => observer.disconnect()
