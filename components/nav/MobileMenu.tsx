@@ -8,7 +8,6 @@ import { socialLinks } from '@/lib/social'
 
 // ─── Nav items ───────────────────────────────────────────────────────────────
 const navItems = [
-  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/music', label: 'Music' },
   { href: '/shows', label: 'Shows' },
