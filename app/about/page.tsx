@@ -1,13 +1,12 @@
-import type { Metadata } from 'next'
-import { PageWrapper } from '@/components/ui/PageWrapper'
-import { AboutHero } from '@/components/about/AboutHero'
-import { BioParagraphs } from '@/components/about/BioParagraphs'
+import type { Metadata } from "next";
+import { PageWrapper } from "@/components/ui/PageWrapper";
+import { AboutHero } from "@/components/about/AboutHero";
+import { BioParagraphs } from "@/components/about/BioParagraphs";
 
 export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'sennatra — electronic artist working in dark ambient, industrial, and experimental sound.',
-}
+  title: "About",
+  description: "sennatra - keyboardist, dj and producer based in New Jersey.",
+};
 
 export default function AboutPage() {
   return (
@@ -17,5 +16,5 @@ export default function AboutPage() {
         <BioParagraphs />
       </main>
     </PageWrapper>
-  )
+  );
 }

@@ -49,6 +49,7 @@ export default function HeroSection({
 
   return (
     <section
+      id="home-hero"
       ref={sectionRef}
       className="relative flex items-center justify-center min-h-screen overflow-hidden"
       aria-label="Hero"
