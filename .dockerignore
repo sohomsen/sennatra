@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.env*
+*.log
+README.md
+nginx
+deploy.sh
+rebuild.sh
